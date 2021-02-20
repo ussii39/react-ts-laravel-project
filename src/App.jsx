@@ -1,7 +1,9 @@
-import React, { useCallback, useRef, useState, useEffect } from "react";
+import React, { FC, useCallback, useRef, useState, useEffect } from "react";
 import logo from "./logo.svg";
 import axios from "axios";
 import "./App.css";
+import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
+import { Login } from "./Login";
 
 function App() {
   const [todos, Settodos] = useState([]);
@@ -16,15 +18,20 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <div>
-        {todos.map((todo, index) => (
-          <div key={index}>
-            <div>{todo.name}</div>
+    <Router>
+      <Switch>
+        <Route exact path="/verify/:slug" component={Login} />
+        <div className="App">
+          <div>
+            {todos.map((todo, index) => (
+              <div key={index}>
+                <div>{todo.name}</div>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-    </div>
+        </div>
+      </Switch>
+    </Router>
   );
 }
 
