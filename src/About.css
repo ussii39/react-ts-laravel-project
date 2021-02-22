@@ -1,0 +1,59 @@
+.Weeks {
+  display: inline-flex;
+  color: #c4bebe;
+  font-size: 20px;
+}
+.week-area {
+  margin: 30px 40px;
+}
+.container {
+  padding: 20px;
+  display: block;
+  width: 800px;
+  margin: 0 auto;
+}
+.month-1 {
+  display: inline-flex;
+  background-color: #eceaea;
+  border: solid 1px;
+}
+.month-2 {
+  display: inline-flex;
+  background-color: #eceaea;
+  border: solid 1px;
+}
+.month-3 {
+  display: inline-flex;
+  background-color: #eceaea;
+  border: solid 1px;
+}
+.month-4 {
+  display: inline-flex;
+  background-color: #eceaea;
+  border: solid 1px;
+}
+.month-area {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.first-week {
+  width: 100px;
+  height: 100px;
+}
+.first-week:nth-child(1) {
+  color: red;
+}
+.second-week {
+  width: 100px;
+  height: 100px;
+}
+.third-week {
+  width: 100px;
+  height: 100px;
+}
+.forth-week {
+  width: 100px;
+  height: 100px;
+}
