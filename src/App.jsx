@@ -4,6 +4,8 @@ import axios from "axios";
 import "./App.css";
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import { Login } from "./Login";
+import { Home } from "./Home";
+import { About } from "./About";
 
 function App() {
   const [todos, Settodos] = useState([]);
@@ -21,6 +23,9 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/verify/:slug" component={Login} />
+        <Route exact path="/home" component={Home} />
+        <Route exact path="/about" component={About} />
+
         <div className="App">
           <div>
             {todos.map((todo, index) => (
