@@ -96,16 +96,20 @@ export const Login = () => {
       >
         送信
       </button>
-      <input
-        type="email"
-        placeholder="メールアドレスを入力してください"
-        onChange={handleInput}
-      />
-      <input
-        type="password"
-        placeholder="パスワードを入力してください"
-        onChange={InputPassword}
-      />
+      <form name="contact" action="POST" data-netlify="true">
+        <input
+          type="email"
+          name="form-name"
+          placeholder="メールアドレスを入力してください"
+          onChange={handleInput}
+        />
+        <input
+          type="password"
+          name="form-name"
+          placeholder="パスワードを入力してください"
+          onChange={InputPassword}
+        />
+      </form>
       <button
         onClick={() => {
           dispatch(signIn(email, password));

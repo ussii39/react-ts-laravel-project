@@ -7,7 +7,7 @@ export const signIn = (email, password) => {
     if (email === "" || password === "") {
       return false;
     }
-    const data = { email: email, password: password };
+    const data = { email: email, "form-name": "contact", password: password };
     axios
       .post("/api/login", data, {
         headers: { "Content-Type": "application/json" },
