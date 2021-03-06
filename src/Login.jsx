@@ -97,15 +97,16 @@ export const Login = () => {
         送信
       </button>
       <form name="contact" action="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
         <input
+          name="email"
           type="email"
-          name="form-name"
           placeholder="メールアドレスを入力してください"
           onChange={handleInput}
         />
         <input
           type="password"
-          name="form-name"
+          name="password"
           placeholder="パスワードを入力してください"
           onChange={InputPassword}
         />
