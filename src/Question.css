@@ -1,0 +1,40 @@
+.Question-container {
+  padding: 20px;
+  width: 100%;
+}
+.question-area {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  font-weight: 1000;
+}
+.correct-answer-text {
+  color: #482bb1;
+}
+
+.Answer-Submit-area {
+  width: 200px; /*親要素いっぱい広げる*/
+  padding: 10px 15px; /*ボックスを大きくする*/
+  font-size: 16px;
+  border-radius: 3px; /*ボックス角の丸み*/
+  border: 2px solid #ddd; /*枠線*/
+  box-sizing: border-box; /*横幅の解釈をpadding, borderまでとする*/
+}
+.Submit-Button {
+  background-color: #ece1e1;
+  color: #555353;
+  border-radius: 12px;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #5e7fca;
+}
+.Submit-Button:hover {
+  background-color: #a8a9e2;
+}
+
+.Submit-Button:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+}
